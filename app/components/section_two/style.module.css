@@ -1,0 +1,102 @@
+.section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .cont {
+  height: 100%;
+  max-width: 1290px;
+  width: 100%;
+}
+
+.section .cont .card {
+  height: 247px;
+  width: 450px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section .cont .card .text {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.section .cont .card .text h3 {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.section .cont .card .text p {
+  font-size: 23px;
+}
+
+.section .cont .card .text a {
+  text-transform: capitalize;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.section .cont .card .text a p {
+  font-size: 17px;
+  padding: 0 3px;
+}
+
+.section .cont .card .img {
+  width: 100%;
+}
+
+.section .cont .card img {
+  filter: brightness(90%);
+}
+
+.section .cont .cards {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.section .cont .cards .card:nth-child(1) img {
+  transform: rotateY(180deg);
+  background-color: #8fbdcc;
+}
+
+.section .cont .cards .card:nth-child(2) img {
+  background-color: #f46e86;
+  top: 66%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.section .cont .cards .card:nth-child(3) img {
+  background-color: #dea800;
+}
+
+@media (max-width: 1300px) {
+  .section {
+    height: 800px;
+  }
+  .section .cont .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .section .cont .card {
+    height: 200px;
+    width: 300px;
+  }
+}

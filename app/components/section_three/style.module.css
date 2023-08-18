@@ -1,0 +1,125 @@
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.section .cont {
+  max-width: 1290px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.section .cont h2 {
+  font-size: 27px;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.section .cont .cats {
+  max-width: 1290px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.section .cont .cats .card {
+  min-width: 150px;
+  max-width: 150px;
+  max-width: 150px;
+  height: fit-content;
+  text-align: center;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.section .cont .cats .img {
+  border-radius: 50%;
+  width: 100%;
+  height: 147px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #eee;
+  position: relative;
+}
+
+.section .cont .cats .card:nth-child(5) img,
+.section .cont .cats .card:nth-child(6) img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section .cont .cats .card:nth-child(7) .img img {
+  position: absolute;
+  top: -10px;
+}
+
+.leftArrow {
+  position: absolute;
+  left: -30px;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  z-index: 2;
+  border-radius: 50%;
+}
+.rightArrow {
+  position: absolute;
+  right: -30px;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.leftArrow p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotateY(180deg) translate(50%, -50%);
+  font-size: 22px;
+}
+.rightArrow p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+
+@media (max-width: 1290px) {
+  .leftArrow {
+    position: absolute;
+    left: -10px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    z-index: 2;
+    border-radius: 50%;
+  }
+  .rightArrow {
+    position: absolute;
+    right: -10px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    z-index: 2;
+    border-radius: 50%;
+  }
+}

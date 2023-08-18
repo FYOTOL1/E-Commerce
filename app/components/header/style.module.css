@@ -1,0 +1,193 @@
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(128, 128, 128, 0.187);
+}
+
+.header .container {
+  max-width: 1290px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header .logo {
+  font-size: 22px;
+  color: #223b47;
+}
+
+.header .list {
+  width: 450px;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.header .list ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header .list ul li {
+  transition: all 0.3s;
+  width: 65px;
+  padding: 2px 0;
+  border-radius: 4px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.header .list ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.header .button {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 30px;
+  border-radius: 20px;
+  color: #35373b;
+  font-size: 14px;
+}
+
+.header .button button {
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  background-color: #91fabd;
+}
+
+.header .button button:hover {
+  color: #223b47;
+  background-color: #91fabd90;
+  box-shadow: 0 0 2px rgba(128, 128, 128, 0.168);
+}
+
+/*  */
+@media (max-width: 767px) {
+  .header .list {
+    width: 300px;
+  }
+}
+
+/*  */
+.dropList {
+  display: flex;
+  align-items: center;
+}
+
+.dropList .mineo {
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.dropList .mineo p {
+  margin: -12px 5px;
+  padding-bottom: 10px;
+}
+
+.dropList .screen {
+  position: absolute;
+  height: calc(90vh - 60px);
+  left: -1px;
+  right: -1px;
+  top: 58px;
+  background-color: #ececec2f;
+  animation: drop 0.2s alternate;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropList .screenRev {
+  position: absolute;
+  height: 0;
+  left: -1px;
+  right: -1px;
+  top: 60px;
+  background-color: #ececec27;
+  animation: dropRev 0.3s alternate;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropList .screen .col {
+  width: 25%;
+  height: 100%;
+  outline: 1px solid rgba(128, 128, 128, 0.489);
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.dropList .screen .col ul {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.dropList .screen .col ul li {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  background: #017275;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #c6f9ff;
+  transition: all 0.3s;
+}
+
+.dropList .screen .col ul li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@keyframes drop {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(90vh - 60px);
+  }
+}
+
+@keyframes dropRev {
+  0% {
+    height: calc(90vh - 60px);
+    opacity: 0.7;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
