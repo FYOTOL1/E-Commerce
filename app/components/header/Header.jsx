@@ -1,11 +1,14 @@
 "use client";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import style from "./style.module.css";
 import { dropArrow } from "../smalls/fontAwesome";
 
 export default function Header() {
-  const [query, setquery] = useState(window.innerWidth);
+  const [query, setquery] = useState();
   const [click, setclick] = useState(false);
+  useEffect(() => {
+    setquery(window.innerWidth);
+  }, []);
 
   let ev = () => {
     click == false ? setclick(true) : setclick(false);
