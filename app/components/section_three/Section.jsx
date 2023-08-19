@@ -45,15 +45,6 @@ export default function Section() {
             <Cat title={"watch"} img={"/watch.png"} />
             <Cat title={"bags"} img={"/bags.jpg"} />
             <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
-            <Cat title={"men"} img={"/mens.jpg"} />
             <div onClick={rightArr} className={style.rightArrow}>
               <p>{rightArrow2}</p>
             </div>

@@ -6,11 +6,9 @@ import { dropArrow } from "../smalls/fontAwesome";
 export default function Header() {
   const [query, setquery] = useState(window.innerWidth);
   const [click, setclick] = useState(false);
-  console.log(click);
 
   let ev = () => {
     click == false ? setclick(true) : setclick(false);
-    console.log(click);
   };
   return (
     <>

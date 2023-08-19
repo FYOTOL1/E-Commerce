@@ -15,6 +15,7 @@
   justify-content: space-between;
   flex-direction: row-reverse;
   overflow: hidden;
+  padding: 0 4px;
 }
 
 .section .rightS,
