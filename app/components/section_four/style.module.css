@@ -43,7 +43,7 @@
 
 .card:hover {
   opacity: 0.9;
-  box-shadow: 6px 0px 0px #80808082;
+  box-shadow: 0px 0px 4px #808080c7;
 }
 
 .card .cardCont {
