@@ -10,10 +10,10 @@ export default function Home() {
     <div className="app">
       <Header />
       <Section1 />
+      <Section5 />
       <Section2 />
       <Section3 />
       <Section4 />
-      <Section5 />
     </div>
   );
 }
